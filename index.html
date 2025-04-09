@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      border: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 16px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    .top-bar input {
+      flex: 1;
+      padding: 8px;
+    }
+
+    .top-bar button {
+      padding: 8px 12px;
+    }
+
+    .forum {
+      display: flex;
+    }
+
+    .topics-list {
+      width: 40%;
+      border-right: 1px solid #ddd;
+    }
+
+    .topic-item {
+      padding: 16px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .badge {
+      background: #eee;
+      border-radius: 12px;
+      padding: 2px 10px;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+
+    .topic-content {
+      width: 60%;
+      padding: 16px;
+    }
+
+    .comment {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .comment img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .comment-body {
+      flex: 1;
+    }
+
+    .comment-actions {
+      margin-top: 10px;
+      display: flex;
+      gap: 16px;
+    }
+
+    .comment-actions span {
+      cursor: pointer;
+      color: #333;
+    }
+
+    .comment-box {
+      margin-top: 16px;
+    }
+
+    .comment-box input {
+      width: 100%;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Fórum de Discussão Interativo</header>
+
+    <div class="top-bar">
+      <strong>Nome da disciplina</strong>
+    </div>
+
+    <div class="top-bar">
+      <input type="text" placeholder="🔍 Buscar tópicos...">
+      <button>Mais recentes</button>
+      <button>Mais comentados</button>
+      <button>+ Novo tópico</button>
+    </div>
+
+    <div class="forum">
+      <div class="topics-list">
+        <div class="topic-item">
+          <div><strong>Título do tópico </strong><span class="badge">Resolvido</span></div>
+          <div>por Aluno 1 • Dúvida • <span>2 ts</span></div>
+        </div>
+        <div class="topic-item">
+          <div><strong>Título do tópico</strong><span class="badge">Debate</span></div>
+          <div>por Professor • <span>5 ts</span></div>
+        </div>
+        <div class="topic-item">
+          <div><strong>Título do tópico</strong><span class="badge">Aberto</span></div>
+          <div>por Aluno 2 • <span>1 ts</span></div>
+        </div>
+        <div class="topic-item"><strong>Título do tópico</strong></div>
+        <div class="topic-item"><strong>Título do tópico</strong></div>
+      </div>
+
+      <div class="topic-content">
+        <h3>Título do tópico</h3>
+        <p>Conteúdo do tópico</p>
+
+        <div class="comment">
+          <img src="image copy.png" alt="Avatar do aluno">
+          <div class="comment-body">
+            <strong>Aluno 1</strong><br>
+            Comentário de Aluno 1
+            <div class="comment-actions">
+              <span>👍 Curtir</span>
+              <span>💬 Responder</span>
+              <span>✅ Marcar como resolvido</span>
+            </div>
+            <div class="comment-box">
+              <input type="text" placeholder="Escrever um comentário...">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
